@@ -18,16 +18,16 @@
 - Grader-style verify: python3 -P -s main.py with empty /output (and default
   /output) writes entry.txt, 71 bytes, exactly 1 line, 71 chars, mode 0644.
 - Kit check (fresh level-20 kit): 4 pass (competition_open, snapshot,
-  license_osi, entrypoint), 1 fail = transcripts_present (no bundle yet —
-  expected: bundle is a submit-time step), 14 skipped, 5 checked at
-  submission (repo public, owner, created-after-open, commit pushed — all
-  satisfied). No local grade exists for this bounty; the server grades it.
-- Bundle: NOT made. bundle --dry-run finds 17 Muse app sessions but 0 usage
-  rows — per the kit, the usage SELECT must run from the top-level agent
-  (agent_id 2d7fced3-...) once this builder subagent finishes, then bundle
-  with --muse-usage. Do that at submit time, then re-run kit check with
-  --transcripts before submitting.
-- Status: built, tested, pushed. NOT SUBMITTED — submit needs Joni's
-  'Setuju' on the exact entry.
+  license_osi, entrypoint), 1 fail transcripts_present (no bundle yet).
+- SUBMITTED 24 Nov 2026 ~12:41 WIB on Joni's "Semua": submission
+  01a20c12-6536-757b-9c82-b9ea1d6dc653, stage submitted (all server checks
+  pass: repo, license, transcripts, thinking_own_work 170/188, security
+  audit clean). Entry commit 97ca8347a43da78dfe8af03605760ff370be640d.
+  Bundle sha256 e76c728d70223d9301518e7bc56351a6995fa598f53b3b2b1c15a0dcc641e38e
+  (166,716 B; fresh level-40 kit; builder session f99a67d8, 1 usage row).
+  Blind 4 rounds, counts from round 1 of 4 (cutoff 24 Nov 23:45 WIB).
+  Claim code ONLY in ~/.config/makefun/u-hakimi-neko-ai-two-days-of-quiet-dread-94fa1018-submission.json (0600).
+  (Earlier kit-check note: 14 skipped, 5 checked at submission — all satisfied.)
+- Bundle: made at submit time (see above).
 - Live score / rank: blind rounds — nothing shows until round 1 closes
   (24 Nov 23:45 WIB). Check `GET /api/competitions/<slug>/rounds` after that.
